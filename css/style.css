@@ -1625,7 +1625,7 @@ html {
     min-width: 360px;
     height: 100%;
     transition: all 0.3s;
-    padding: 30px 50px 80px;
+    padding: 50px 50px 80px;
   }
   .header__side-top {
     display: flex;
