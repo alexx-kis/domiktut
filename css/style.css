@@ -874,7 +874,11 @@ html {
 }
 .compilations__item {
   min-width: 110px;
-  margin-bottom: 22px;
+  margin-bottom: 22px;  
+  transition: all 0.3s;
+}
+.compilations__item:hover {
+  transform: scale(1.05);
 }
 .compilations__item-link {
   display: block;
