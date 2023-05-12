@@ -1,7 +1,7 @@
 'use strict';
 
 // Кнопка показа nav
-let headerHideLink = document.querySelector('.header__hide-link');
+let headerHideLink = document.querySelector('.header__hide-button');
 let headerTop = document.querySelector('.header__top');
 
 headerHideLink.addEventListener('click', function (e) {
