@@ -994,6 +994,11 @@ html {
 	&__item {
 		min-width: 110px;
 		margin-bottom: 22px;
+		transition: all .3s;
+	}
+
+	&__item:hover {
+		transform: scale(1.05);
 	}
 
 	&__item-link {
