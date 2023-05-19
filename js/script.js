@@ -15,6 +15,7 @@ headerHideLink.addEventListener('click', function (e) {
 let searchLink = document.querySelector('.header__search-link');
 let searchPopUp = document.querySelector('.header__search-pop-up');
 let wrapper = document.querySelector('.wrapper');
+let overlay = document.querySelector('.overlay');
 wrapper.addEventListener('click', function (e) {
 	searchPopUp.classList.remove('header__search-pop-up--active');
 	e.stopPropagation();
@@ -23,6 +24,8 @@ searchLink.addEventListener('click', function (e) {
 	e.stopPropagation();
 	e.preventDefault();
 	searchPopUp.classList.toggle('header__search-pop-up--active');
+	// $('.overlay').toggleClass('overlay--show');
+	overlay.classList.toggle('overlay--show');
 });
 searchPopUp.addEventListener('click', function (e) {
 	e.stopPropagation();
@@ -41,37 +44,10 @@ $(function () {
 			$('.header__top').addClass('header__top--fixed');
 			logoImg.src = './img/1.header/header__logo-dark.png';
 			arrow.src = './img/1.header/arrow-down-icon-dark.svg';
-			$('.header__button').addClass('header__button--fixed');
-			$('.header__dropdown').addClass('header__dropdown--fixed');
-			$('.header__compilations').addClass('header__compilations--fixed');
-			$('.header__favourites').addClass('header__favourites--fixed');
-			$('.header__search').addClass('header__search--fixed');
-			$('.header__search-icon').addClass('header__search-icon--fixed');
-			$('.header__search-text').addClass('header__search-text--fixed');
-			$('.header__phone').addClass('header__phone--fixed');
-			$('.header__burger').addClass('header__burger--fixed');
-			$('.header__menu-items--right').addClass('header__menu-items--right--fixed');
-			$('.header__hide-button').addClass('header__hide-button--fixed');
-			$('.header__compilation-button').addClass('header__compilation-button--fixed');
-			$('.header__search-pop-up').addClass('header__search-pop-up--fixed');
 		} else {
 			$('.header__top').removeClass('header__top--fixed');
 			logoImg.src = './img/1.header/header__logo.png';
 			arrow.src = './img/1.header/arrow-down-icon.svg';
-			$('.header__button').removeClass('header__button--fixed')
-			$('.header__dropdown').removeClass('header__dropdown--fixed');
-			$('.header__compilations').removeClass('header__compilations--fixed');
-			$('.header__favourites').removeClass('header__favourites--fixed');
-			$('.header__search').removeClass('header__search--fixed');
-			$('.header__search-icon').removeClass('header__search-icon--fixed');
-			$('.header__search-text').removeClass('header__search-text--fixed');
-			$('.header__phone').removeClass('header__phone--fixed');
-			$('.header__menu-items--right').removeClass('header__menu-items--right--fixed');
-			$('.header__burger').removeClass('header__burger--fixed');
-			$('.header__hide-button').removeClass('header__hide-button--fixed');
-			$('.header__compilation-button').removeClass('header__compilation-button--fixed');
-			$('.header__search-pop-up').removeClass('header__search-pop-up--fixed');
-
 		}
 	});
 });
@@ -171,20 +147,20 @@ for (let likeButton of likeButtons) {
 
 // Аккордеон
 
+let accQuestions = document.querySelectorAll('.faq__acc-question');
+let lines = document.querySelectorAll('.line2');
 
-$('.faq__acc-item').on('click', function (e) {
-	e.preventDefault()
-	if ($(this).hasClass('faq__acc-item--active')) {
-		$(this).removeClass('faq__acc-item--active');
-		$(this).children('.faq__acc-answer').slideUp();
-	}
-	else {
-		$('.faq__acc-question').removeClass('faq__acc-item--active');
-		// $('.faq__acc-answer').slideUp();
-		$(this).addClass('faq__acc-item--active');
-		$(this).children('.faq__acc-answer').slideDown();
-	}
-})
+for (let i = 0; i < accQuestions.length; i++) {
+	accQuestions[i].addEventListener('click', function () {
+		lines[i].classList.toggle('line2--active');
+		let accAnswer = this.nextElementSibling;
+		if (accAnswer.style.maxHeight) {
+			accAnswer.style.maxHeight = null;
+		} else {
+			accAnswer.style.maxHeight = accAnswer.scrollHeight + "px";
+		}
+	});
+}
 
 // tooltip
 
@@ -207,6 +183,10 @@ let cervForm = document.querySelector('.cervices__form');
 learnBtn.addEventListener('click', function (e) {
 	e.preventDefault();
 	cervForm.classList.add('form--visible');
+	overlay.classList.add('overlay--show');
+});
+overlay.addEventListener('click', function () {
+	cervForm.classList.remove('form--visible');
 });
 
 let cervFormButton = document.querySelector('.cervices__form-button');
@@ -242,6 +222,7 @@ cervFormButton.addEventListener('click', function f(e) {
 		cervCloseBtn.addEventListener('click', function (e) {
 			e.preventDefault();
 			cervForm.classList.remove('form--visible');
+			overlay.classList.remove('overlay--show');
 		});
 	}
 });
@@ -251,6 +232,7 @@ let cervFormCross = document.querySelector('.cervices__form-cross-link');
 cervFormCross.addEventListener('click', function (e) {
 	e.preventDefault();
 	cervForm.classList.remove('form--visible');
+	overlay.classList.remove('overlay--show');
 });
 
 
@@ -263,6 +245,10 @@ let rentForm = document.querySelector('.rent__form');
 rentButton.addEventListener('click', function (e) {
 	e.preventDefault();
 	rentForm.classList.add('form--visible');
+	overlay.classList.add('overlay--show');
+});
+overlay.addEventListener('click', function () {
+	rentForm.classList.remove('form--visible');
 });
 
 let rentFormBtn = document.querySelector('.rent__form-button');
@@ -296,6 +282,7 @@ rentFormBtn.addEventListener('click', function f(e) {
 		closeButton.addEventListener('click', function (e) {
 			e.preventDefault();
 			rentForm.classList.remove('form--visible');
+			overlay.classList.remove('overlay--show');
 		});
 	}
 });
@@ -307,6 +294,7 @@ let rentFormCross = document.querySelector('.rent__form-cross-link');
 rentFormCross.addEventListener('click', function (e) {
 	e.preventDefault();
 	rentForm.classList.remove('form--visible');
+	overlay.classList.remove('overlay--show');
 });
 
 
@@ -314,11 +302,13 @@ rentFormCross.addEventListener('click', function (e) {
 /*------------------------------ burger ------------------------------*/
 
 $('.header__burger-link, .overlay, .header__side a, .header__side-close-link').on('click', function (e) {
-	e.preventDefault();
+	// e.preventDefault();
 	$('.header__side').toggleClass('header__side--open');
 	$('.overlay').toggleClass('overlay--show');
-	// $('.burger').toggleClass('burger__active');
 })
+overlay.addEventListener('click', function () {
+	$('.header__side').removeClass('header__side--open');
+});
 
 
 /*------------------------------ footer ------------------------------*/
