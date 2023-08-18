@@ -119,7 +119,6 @@ html {
   color: #000;
   padding: 11px 60px 12px;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #fff;
   border-radius: 200px;
@@ -161,7 +160,6 @@ html {
   opacity: 0;
   position: absolute;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   z-index: 100;
 }
@@ -293,7 +291,6 @@ html {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -311,7 +308,6 @@ html {
   top: -40px;
   right: 0px;
   -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -336,7 +332,6 @@ html {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -374,7 +369,6 @@ html {
 .header__top {
   padding-top: 42px;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   padding-bottom: 30px;
   font-size: 18px;
@@ -425,7 +419,6 @@ html {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: absolute;
   padding: 10px 10px 10px 20px;
@@ -439,7 +432,6 @@ html {
 }
 .header__dropdown-link {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   color: #fff;
 }
@@ -481,7 +473,6 @@ html {
 .header__links-link {
   color: #fff;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .header__links-link:hover {
@@ -503,7 +494,6 @@ html {
 }
 .header__favourites-link svg path {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .header__favourites-link:hover svg path {
@@ -538,12 +528,10 @@ html {
 }
 .header__search-icon svg path {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .header__search-text {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .header__phone {
@@ -575,12 +563,10 @@ html {
 }
 .header__phone-icon svg path {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .header__phone-text {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .header__burger {
@@ -599,7 +585,6 @@ html {
 }
 .header__search-pop-up {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   visibility: hidden;
   opacity: 0;
@@ -625,7 +610,6 @@ html {
 }
 .header__search-pop-up--active {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   visibility: visible;
   opacity: 1;
@@ -675,7 +659,6 @@ html {
   display: block;
   color: #7B7B7B;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .header__hide-link--small {
@@ -696,12 +679,10 @@ html {
   display: block;
   color: #7B7B7B;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .header__top--fixed {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: fixed;
   width: 100%;
@@ -884,7 +865,6 @@ html {
 }
 .header__socials-link svg path {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .header__socials-item:hover .header__socials-link svg path {
@@ -1154,7 +1134,6 @@ html {
   min-width: 110px;
   margin-bottom: 22px;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .compilations__item:hover {
@@ -1207,7 +1186,6 @@ html {
   -webkit-box-shadow: 0px 4px 80px rgba(5, 9, 22, 0.08);
           box-shadow: 0px 4px 80px rgba(5, 9, 22, 0.08);
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .popular__cards-card:hover {
@@ -1256,7 +1234,6 @@ html {
   right: 20px;
   bottom: 20px;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .popular__cards-like svg {
@@ -1371,7 +1348,6 @@ html {
   line-height: 150%;
   color: #333333;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .popular__cards-link:hover {
@@ -1426,7 +1402,6 @@ html {
       -ms-flex-align: center;
           align-items: center;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #fff;
 }
@@ -1528,7 +1503,6 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .faq__acc-question-button-box:hover {
@@ -1547,7 +1521,6 @@ html {
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
-  -o-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
 }
 
@@ -1561,7 +1534,6 @@ html {
 
 .line2 {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: absolute;
   display: block;
@@ -1575,7 +1547,6 @@ html {
 
 .line2--active {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: absolute;
   display: block;
@@ -1642,7 +1613,6 @@ html {
 /*==================================== FOOTER ====================================*/
 .footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#161723), color-stop(109.24%, #161723));
-  background: -o-linear-gradient(top, #161723 0%, #161723 109.24%);
   background: linear-gradient(180deg, #161723 0%, #161723 109.24%);
 }
 .footer__top {
@@ -1681,7 +1651,6 @@ html {
   line-height: 20px;
   color: #C0C2D7;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .footer__list-link:hover {
@@ -1698,7 +1667,6 @@ html {
   line-height: 20px;
   color: #C0C2D7;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .footer__links-link:hover {
@@ -1722,7 +1690,6 @@ html {
 }
 .footer__tel-icon svg path {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .footer__tel:hover .footer__tel-icon svg path {
@@ -1736,7 +1703,6 @@ html {
   line-height: 20px;
   color: #C0C2D7;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .footer__tel:hover .footer__tel-number {
@@ -1768,7 +1734,6 @@ html {
   line-height: 150%;
   color: #404256;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .footer__socials {
@@ -1788,7 +1753,6 @@ html {
 }
 .footer__socials-item svg path {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .footer__socials-item:hover svg path {
@@ -1814,10 +1778,8 @@ html {
     font-size: 13px;
   }
 }
-@media (max-width: 1650px) {
-  .container {
-    padding: 0 100px;
-  }
+/*------------------------------ 1660 ------------------------------*/
+@media (max-width: 1660px) {
   .header__top {
     font-size: 16px;
   }
@@ -1834,6 +1796,11 @@ html {
   .header__search-input::after {
     width: 600px;
     height: 1px;
+  }
+}
+@media (max-width: 1650px) {
+  .container {
+    padding: 0 100px;
   }
   .rent .container {
     padding: 0px 260px;
@@ -1865,7 +1832,7 @@ html {
     padding: 0 50px;
   }
 }
-@media (max-width: 1450px) {
+@media (max-width: 1455px) {
   .header__top {
     font-size: 14px;
   }
@@ -2080,7 +2047,6 @@ html {
     min-width: 360px;
     height: 100%;
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
     padding: 30px 50px 80px;
   }
@@ -2143,7 +2109,6 @@ html {
     visibility: hidden;
     opacity: 0;
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
     position: absolute;
     margin-top: -12px;
@@ -2161,7 +2126,6 @@ html {
   }
   .header__side-dropdown-link {
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
     color: #333;
   }
@@ -2179,7 +2143,6 @@ html {
     display: block;
     margin-bottom: 12px;
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
   }
   .header__side-link:hover {
@@ -2197,7 +2160,6 @@ html {
   }
   .header__side-phone svg path {
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
   }
   .header__side-phone-number {
@@ -2205,7 +2167,6 @@ html {
     line-height: 20px;
     color: #C0C2D7;
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
   }
   .header__side-phone:hover .header__side-phone-number {
@@ -2608,12 +2569,10 @@ html {
   }
   .header__bottom-text {
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
   }
   .header__bottom-icon svg path {
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
   }
   .header__compilation-button {
@@ -2801,7 +2760,6 @@ html {
   }
   .header__search-button svg path {
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
   }
   .header__search-button:hover svg path {
