@@ -1061,6 +1061,18 @@ html {
 	}
 
 	&__item {
+		transform: translate(0, 0) scale(0);
+
+		&:nth-child(odd) {
+			transition: all .5s;
+		}
+
+		&:nth-child(even) {
+			transition: all .5s .5s;
+		}
+	}
+
+	&__item-inner {
 		min-width: 110px;
 		margin-bottom: 22px;
 		transition: all .3s;
@@ -1116,20 +1128,49 @@ html {
 		margin-bottom: 80px;
 	}
 
-	&__cards-card {
+
+	&__card {
+		transform: translate(0, 0) scale(0);
+
+		&:nth-child(1) {
+			transition: all .5s;
+		}
+
+		&:nth-child(2) {
+			transition: all .5s .25s;
+		}
+
+		&:nth-child(3) {
+			transition: all .5s .5s;
+		}
+
+		&:nth-child(4) {
+			transition: all .5s;
+		}
+
+		&:nth-child(5) {
+			transition: all .5s .25s;
+		}
+
+		&:nth-child(6) {
+			transition: all .5s .5s;
+		}
+	}
+
+	&__card-inner {
 		max-width: 440px;
 		border-radius: 20px;
 		background: #fff;
 		position: relative;
 		box-shadow: 0px 4px 80px rgba(5, 9, 22, 0.08);
 		transition: all .3s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 
-	&__cards-card:hover {
-		transform: scale(1.1);
-	}
-
-	&__cards-image {
+	&__card-image {
 		margin-bottom: 30px;
 		position: relative;
 
@@ -1139,7 +1180,7 @@ html {
 		}
 	}
 
-	&__cards-amount {
+	&__card-amount {
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 600;
@@ -1154,7 +1195,7 @@ html {
 		right: 30px;
 	}
 
-	&__cards-amount::before {
+	&__card-amount::before {
 		content: '';
 		display: block;
 		width: 14px;
@@ -1165,7 +1206,7 @@ html {
 		left: 20px;
 	}
 
-	&__cards-like {
+	&__card-like {
 		background: #ffffff80;
 		border-radius: 50%;
 		width: 50px;
@@ -1184,21 +1225,21 @@ html {
 		transition: all .3s;
 	}
 
-	&__cards-like--active {
+	&__card-like--active {
 		& svg path {
 			fill: #F4683F;
 		}
 	}
 
-	&__cards-like:active {
+	&__card-like:active {
 		transform: scale(0.9);
 	}
 
-	&__cards-info {
-		padding: 0px 30px;
+	&__card-info {
+		padding: 0px 30px 40px;
 	}
 
-	&__cards-title {
+	&__card-title {
 		font-family: 'Raleway';
 		font-style: normal;
 		font-weight: 800;
@@ -1208,11 +1249,11 @@ html {
 		margin-bottom: 16px;
 	}
 
-	&__cards-features {
+	&__card-features {
 		margin-bottom: 27px;
 	}
 
-	&__cards-feature {
+	&__card-feature {
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 600;
@@ -1224,7 +1265,7 @@ html {
 		padding-left: 35px;
 	}
 
-	&__cards-feature:first-child::before {
+	&__card-feature:first-child::before {
 		content: '';
 		display: block;
 		background: url('../img/3.popular/icons/icon_bed.svg');
@@ -1235,7 +1276,7 @@ html {
 		left: 0px;
 	}
 
-	&__cards-feature:nth-child(2)::before {
+	&__card-feature:nth-child(2)::before {
 		content: '';
 		display: block;
 		background: url('../img/3.popular/icons/icon_entertainment.svg');
@@ -1246,7 +1287,7 @@ html {
 		left: 0px;
 	}
 
-	&__cards-feature:nth-child(3)::before {
+	&__card-feature:nth-child(3)::before {
 		content: '';
 		display: block;
 		background: url('../img/3.popular/icons/icon_sauna.svg');
@@ -1257,7 +1298,7 @@ html {
 		left: 0px;
 	}
 
-	&__cards-feature:last-child::before {
+	&__card-feature:last-child::before {
 		content: '';
 		display: block;
 		background: url('../img/3.popular/icons/icon_waterpool.svg');
@@ -1268,14 +1309,13 @@ html {
 		left: 0px;
 	}
 
-	&__cards-bottom {
+	&__card-bottom {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 40px;
 	}
 
-	&__cards-price {
+	&__card-price {
 		font-family: 'Raleway';
 		font-style: normal;
 		font-weight: 800;
@@ -1285,11 +1325,11 @@ html {
 		color: #333333;
 	}
 
-	&__cards-details {
+	&__card-details {
 		margin-right: 0;
 	}
 
-	&__cards-link {
+	&__card-link {
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 600;
@@ -1299,8 +1339,13 @@ html {
 		transition: all .3s;
 	}
 
-	&__cards-link:hover {
+	&__card-link:hover {
 		color: #F4683F;
+	}
+
+	&__button-wrapper {
+		transform: translate(0, 100px) scale(1);
+		transition: all .5s;
 	}
 
 	&__button {

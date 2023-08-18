@@ -1217,6 +1217,19 @@ html {
           column-gap: 22px;
 }
 .compilations__item {
+  -webkit-transform: translate(0, 0) scale(0);
+      -ms-transform: translate(0, 0) scale(0);
+          transform: translate(0, 0) scale(0);
+}
+.compilations__item:nth-child(odd) {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.compilations__item:nth-child(even) {
+  -webkit-transition: all 0.5s 0.5s;
+  transition: all 0.5s 0.5s;
+}
+.compilations__item-inner {
   min-width: 110px;
   margin-bottom: 22px;
   -webkit-transition: all 0.3s;
@@ -1264,7 +1277,36 @@ html {
   gap: 40px;
   margin-bottom: 80px;
 }
-.popular__cards-card {
+.popular__card {
+  -webkit-transform: translate(0, 0) scale(0);
+      -ms-transform: translate(0, 0) scale(0);
+          transform: translate(0, 0) scale(0);
+}
+.popular__card:nth-child(1) {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.popular__card:nth-child(2) {
+  -webkit-transition: all 0.5s 0.25s;
+  transition: all 0.5s 0.25s;
+}
+.popular__card:nth-child(3) {
+  -webkit-transition: all 0.5s 0.5s;
+  transition: all 0.5s 0.5s;
+}
+.popular__card:nth-child(4) {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.popular__card:nth-child(5) {
+  -webkit-transition: all 0.5s 0.25s;
+  transition: all 0.5s 0.25s;
+}
+.popular__card:nth-child(6) {
+  -webkit-transition: all 0.5s 0.5s;
+  transition: all 0.5s 0.5s;
+}
+.popular__card-inner {
   max-width: 440px;
   border-radius: 20px;
   background: #fff;
@@ -1274,20 +1316,20 @@ html {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.popular__cards-card:hover {
+.popular__card-inner:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-.popular__cards-image {
+.popular__card-image {
   margin-bottom: 30px;
   position: relative;
 }
-.popular__cards-image img {
+.popular__card-image img {
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
-.popular__cards-amount {
+.popular__card-amount {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -1301,7 +1343,7 @@ html {
   top: 30px;
   right: 30px;
 }
-.popular__cards-amount::before {
+.popular__card-amount::before {
   content: "";
   display: block;
   width: 14px;
@@ -1311,7 +1353,7 @@ html {
   top: 7px;
   left: 20px;
 }
-.popular__cards-like {
+.popular__card-like {
   background: rgba(255, 255, 255, 0.5019607843);
   border-radius: 50%;
   width: 50px;
@@ -1322,23 +1364,23 @@ html {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.popular__cards-like svg {
+.popular__card-like svg {
   position: absolute;
   top: 32%;
   left: 30%;
 }
-.popular__cards-like--active svg path {
+.popular__card-like--active svg path {
   fill: #F4683F;
 }
-.popular__cards-like:active {
+.popular__card-like:active {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
           transform: scale(0.9);
 }
-.popular__cards-info {
-  padding: 0px 30px;
+.popular__card-info {
+  padding: 0px 30px 40px;
 }
-.popular__cards-title {
+.popular__card-title {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
@@ -1347,10 +1389,10 @@ html {
   color: #333333;
   margin-bottom: 16px;
 }
-.popular__cards-features {
+.popular__card-features {
   margin-bottom: 27px;
 }
-.popular__cards-feature {
+.popular__card-feature {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -1361,7 +1403,7 @@ html {
   margin-bottom: 8px;
   padding-left: 35px;
 }
-.popular__cards-feature:first-child::before {
+.popular__card-feature:first-child::before {
   content: "";
   display: block;
   background: url("../img/3.popular/icons/icon_bed.svg");
@@ -1371,7 +1413,7 @@ html {
   top: 5px;
   left: 0px;
 }
-.popular__cards-feature:nth-child(2)::before {
+.popular__card-feature:nth-child(2)::before {
   content: "";
   display: block;
   background: url("../img/3.popular/icons/icon_entertainment.svg");
@@ -1381,7 +1423,7 @@ html {
   top: 4px;
   left: 0px;
 }
-.popular__cards-feature:nth-child(3)::before {
+.popular__card-feature:nth-child(3)::before {
   content: "";
   display: block;
   background: url("../img/3.popular/icons/icon_sauna.svg");
@@ -1391,7 +1433,7 @@ html {
   top: 0px;
   left: 0px;
 }
-.popular__cards-feature:last-child::before {
+.popular__card-feature:last-child::before {
   content: "";
   display: block;
   background: url("../img/3.popular/icons/icon_waterpool.svg");
@@ -1401,7 +1443,7 @@ html {
   top: 5px;
   left: 0px;
 }
-.popular__cards-bottom {
+.popular__card-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1411,9 +1453,8 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 40px;
 }
-.popular__cards-price {
+.popular__card-price {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
@@ -1423,10 +1464,10 @@ html {
           font-feature-settings: "pnum" on, "lnum" on;
   color: #333333;
 }
-.popular__cards-details {
+.popular__card-details {
   margin-right: 0;
 }
-.popular__cards-link {
+.popular__card-link {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -1436,8 +1477,15 @@ html {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.popular__cards-link:hover {
+.popular__card-link:hover {
   color: #F4683F;
+}
+.popular__button-wrapper {
+  -webkit-transform: translate(0, 100px) scale(1);
+      -ms-transform: translate(0, 100px) scale(1);
+          transform: translate(0, 100px) scale(1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .popular__button {
   max-width: 280px;
@@ -2339,6 +2387,11 @@ html {
     display: block;
     max-width: 292px;
     margin: 0 auto 60px;
+    -webkit-transform: translate(0, 0) scale(0);
+        -ms-transform: translate(0, 0) scale(0);
+            transform: translate(0, 0) scale(0);
+    -webkit-transition: all 0.5s 1.25s;
+    transition: all 0.5s 1.25s;
   }
   .header__body-socials {
     margin: 0 auto;

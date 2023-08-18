@@ -677,6 +677,8 @@
 			display: block;
 			max-width: 292px;
 			margin: 0 auto 60px;
+			transform: translate(0, 0) scale(0);
+			transition: all .5s 1.25s;
 		}
 
 		&__body-socials {
