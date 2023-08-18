@@ -103,17 +103,17 @@
 	}
 
 	.popular {
-		&__cards-title {
+		&__card-title {
 			font-size: 20px;
 		}
 
-		&__cards-price {
+		&__card-price {
 			font-size: 20px;
 		}
 	}
 
 	.cervices {
-		&__grid-title {
+		&__item-title {
 			font-size: 16px;
 		}
 	}
@@ -340,21 +340,21 @@
 	}
 
 	.popular {
-		&__cards-title {
+		&__card-title {
 			font-size: 18px;
 		}
 
-		&__cards-price {
+		&__card-price {
 			font-size: 18px;
 		}
 	}
 
 	.cervices {
-		&__grid-title {
+		&__item-title {
 			font-size: 14px;
 		}
 
-		&__grid-link {
+		&__item-link {
 			// padding: 44px 0 44px 44px;
 			height: 130px;
 		}
@@ -374,28 +374,10 @@
 }
 
 
-// /*------------------------------ 1330 ------------------------------*/
+// /*------------------------------ 1300 ------------------------------*/
 
 
 @media (max-width:1300px) {
-
-	// .overlay {
-	// 	position: fixed;
-	// 	top: 0;
-	// 	left: 0;
-	// 	right: 0;
-	// 	bottom: 0;
-	// 	z-index: 50;
-	// 	background: rgba(0, 0, 0, 0.350);
-	// 	visibility: hidden;
-	// 	opacity: 0;
-	// 	transition: all .3s;
-	// }
-
-	// .overlay--show {
-	// 	visibility: visible;
-	// 	opacity: 1;
-	// }
 
 
 
@@ -611,6 +593,16 @@
 		&__form {
 			top: 108px;
 		}
+
+		&__item {
+			&:nth-child(odd) {
+				transition: all .5s;
+			}
+
+			&:nth-child(even) {
+				transition: all .5s .25s;
+			}
+		}
 	}
 
 	.rent {
@@ -639,11 +631,11 @@
 	}
 
 	.popular {
-		&__cards-bottom {
+		&__card-bottom {
 			flex-direction: column;
 		}
 
-		&__cards-price {
+		&__card-price {
 			margin-bottom: 10px;
 		}
 	}
@@ -737,7 +729,7 @@
 		padding-top: 80px;
 		padding-bottom: 80px;
 
-		&__items-inner {
+		&__items-list {
 			display: grid;
 			grid-template: 1fr 1fr / 1fr 1fr;
 			justify-items: center;
@@ -757,6 +749,16 @@
 
 		&__cards-grid {
 			grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+		}
+
+		&__card {
+			&:nth-child(odd) {
+				transition: all .5s;
+			}
+
+			&:nth-child(even) {
+				transition: all .5s .25s;
+			}
 		}
 	}
 
@@ -968,14 +970,22 @@
 			align-items: center;
 		}
 
-		&__grid-link {
+		&__item-link {
 			width: 408px;
+		}
+
+		&__item {
+			&:nth-child(n) {
+				transition: all .5s;
+			}
 		}
 
 		&__form {
 			top: auto;
 			bottom: 90px;
 		}
+
+
 	}
 
 	.about {
@@ -1185,7 +1195,7 @@
 	}
 
 	.about {
-		&__items-inner {
+		&__items-list {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -1215,6 +1225,12 @@
 	}
 
 	.popular {
+		&__card {
+			&:nth-child(n) {
+				transition: all .5s;
+			}
+		}
+
 		&__cards-grid {
 			grid-template: repeat(6, 1fr) / 1fr;
 			justify-items: center;
@@ -1442,13 +1458,13 @@
 	}
 
 	.cervices {
-		&__grid-link {
+		&__item-link {
 			padding: 20px;
 			height: 90px;
 			width: 300px;
 		}
 
-		&__grid-title {
+		&__item-title {
 			margin-right: 0;
 		}
 
@@ -1510,15 +1526,15 @@
 	}
 
 	.popular {
-		&__cards-title {
+		&__card-title {
 			font-size: 16px;
 		}
 
-		&__cards-feature {
+		&__card-feature {
 			font-size: 14px;
 		}
 
-		&__cards-price {
+		&__card-price {
 			font-size: 14px;
 		}
 	}
@@ -1623,7 +1639,7 @@
 	}
 
 	.cervices {
-		&__grid-link {
+		&__item-link {
 			width: 250px;
 		}
 	}

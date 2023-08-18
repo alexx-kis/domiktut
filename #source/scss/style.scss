@@ -1387,7 +1387,37 @@ html {
 		gap: 40px;
 	}
 
-	&__grid-link {
+	&__item {
+		transform: translate(0, 0) scale(0);
+
+		&:nth-child(1) {
+			transition: all .5s;
+		}
+
+		&:nth-child(2) {
+			transition: all .5s .25s;
+		}
+
+		&:nth-child(3) {
+			transition: all .5s .5s;
+		}
+
+		&:nth-child(4) {
+			transition: all .5s;
+		}
+
+		&:nth-child(5) {
+			transition: all .5s .25s;
+		}
+
+		&:nth-child(6) {
+			transition: all .5s .5s;
+		}
+	}
+
+	&__item-inner {}
+
+	&__item-link {
 		padding: 49px 0px 50px 44px;
 		border-radius: 20px;
 		box-shadow: 0px 4px 80px rgba(5, 9, 22, 0.08);
@@ -1397,15 +1427,15 @@ html {
 		background: #fff;
 	}
 
-	&__grid-link:hover {
+	&__item-link:hover {
 		transform: scale(1.1);
 	}
 
-	&__grid-icon {
+	&__item-icon {
 		margin-right: 22px;
 	}
 
-	&__grid-title {
+	&__item-title {
 		margin-right: 40px;
 		font-family: 'Montserrat';
 		font-style: normal;
@@ -1413,6 +1443,11 @@ html {
 		font-size: 18px;
 		line-height: 150%;
 		color: #333333;
+	}
+
+	&__button-box {
+		transform: translate(0, 100px) scale(1);
+		transition: all .5s;
 	}
 
 	&__button {

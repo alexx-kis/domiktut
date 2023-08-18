@@ -1524,7 +1524,36 @@ html {
   margin-bottom: 60px;
   gap: 40px;
 }
-.cervices__grid-link {
+.cervices__item {
+  -webkit-transform: translate(0, 0) scale(0);
+      -ms-transform: translate(0, 0) scale(0);
+          transform: translate(0, 0) scale(0);
+}
+.cervices__item:nth-child(1) {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cervices__item:nth-child(2) {
+  -webkit-transition: all 0.5s 0.25s;
+  transition: all 0.5s 0.25s;
+}
+.cervices__item:nth-child(3) {
+  -webkit-transition: all 0.5s 0.5s;
+  transition: all 0.5s 0.5s;
+}
+.cervices__item:nth-child(4) {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cervices__item:nth-child(5) {
+  -webkit-transition: all 0.5s 0.25s;
+  transition: all 0.5s 0.25s;
+}
+.cervices__item:nth-child(6) {
+  -webkit-transition: all 0.5s 0.5s;
+  transition: all 0.5s 0.5s;
+}
+.cervices__item-link {
   padding: 49px 0px 50px 44px;
   border-radius: 20px;
   -webkit-box-shadow: 0px 4px 80px rgba(5, 9, 22, 0.08);
@@ -1539,15 +1568,15 @@ html {
   transition: all 0.3s;
   background: #fff;
 }
-.cervices__grid-link:hover {
+.cervices__item-link:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-.cervices__grid-icon {
+.cervices__item-icon {
   margin-right: 22px;
 }
-.cervices__grid-title {
+.cervices__item-title {
   margin-right: 40px;
   font-family: "Montserrat";
   font-style: normal;
@@ -1555,6 +1584,13 @@ html {
   font-size: 18px;
   line-height: 150%;
   color: #333333;
+}
+.cervices__button-box {
+  -webkit-transform: translate(0, 100px) scale(1);
+      -ms-transform: translate(0, 100px) scale(1);
+          transform: translate(0, 100px) scale(1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .cervices__button {
   max-width: 280px;
@@ -1950,13 +1986,13 @@ html {
   .about__items-item {
     min-width: none;
   }
-  .popular__cards-title {
+  .popular__card-title {
     font-size: 20px;
   }
-  .popular__cards-price {
+  .popular__card-price {
     font-size: 20px;
   }
-  .cervices__grid-title {
+  .cervices__item-title {
     font-size: 16px;
   }
 }
@@ -2126,16 +2162,16 @@ html {
   .about__items-text {
     font-size: 14px;
   }
-  .popular__cards-title {
+  .popular__card-title {
     font-size: 18px;
   }
-  .popular__cards-price {
+  .popular__card-price {
     font-size: 18px;
   }
-  .cervices__grid-title {
+  .cervices__item-title {
     font-size: 14px;
   }
-  .cervices__grid-link {
+  .cervices__item-link {
     height: 130px;
   }
   .faq__acc-answer {
@@ -2342,6 +2378,14 @@ html {
   .cervices__form {
     top: 108px;
   }
+  .cervices__item:nth-child(odd) {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .cervices__item:nth-child(even) {
+    -webkit-transition: all 0.5s 0.25s;
+    transition: all 0.5s 0.25s;
+  }
   .rent .container {
     padding: 0 200px;
   }
@@ -2358,13 +2402,13 @@ html {
         -ms-transform: translate(0, -50px);
             transform: translate(0, -50px);
   }
-  .popular__cards-bottom {
+  .popular__card-bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .popular__cards-price {
+  .popular__card-price {
     margin-bottom: 10px;
   }
   .rent .container {
@@ -2432,7 +2476,7 @@ html {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  .about__items-inner {
+  .about__items-list {
     display: grid;
     grid-template: 1fr 1fr/1fr 1fr;
     justify-items: center;
@@ -2448,6 +2492,14 @@ html {
   }
   .popular__cards-grid {
     grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+  }
+  .popular__card:nth-child(odd) {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .popular__card:nth-child(even) {
+    -webkit-transition: all 0.5s 0.25s;
+    transition: all 0.5s 0.25s;
   }
   .cervices {
     margin-bottom: 80px;
@@ -2607,8 +2659,12 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
-  .cervices__grid-link {
+  .cervices__item-link {
     width: 408px;
+  }
+  .cervices__item:nth-child(n) {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .cervices__form {
     top: auto;
@@ -2776,7 +2832,7 @@ html {
   .header__slider-arrow-prev {
     top: 100px;
   }
-  .about__items-inner {
+  .about__items-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2807,6 +2863,10 @@ html {
   }
   .compilations__item-title {
     font-size: 16px;
+  }
+  .popular__card:nth-child(n) {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .popular__cards-grid {
     grid-template: repeat(6, 1fr)/1fr;
@@ -2976,12 +3036,12 @@ html {
     margin-left: -20px;
     margin-right: -20px;
   }
-  .cervices__grid-link {
+  .cervices__item-link {
     padding: 20px;
     height: 90px;
     width: 300px;
   }
-  .cervices__grid-title {
+  .cervices__item-title {
     margin-right: 0;
   }
   .cervices__button {
@@ -3021,13 +3081,13 @@ html {
   .header__side {
     padding: 30px 20px 80px;
   }
-  .popular__cards-title {
+  .popular__card-title {
     font-size: 16px;
   }
-  .popular__cards-feature {
+  .popular__card-feature {
     font-size: 14px;
   }
-  .popular__cards-price {
+  .popular__card-price {
     font-size: 14px;
   }
   .button {
@@ -3122,7 +3182,7 @@ html {
   .header__compilation-button {
     top: 110px;
   }
-  .cervices__grid-link {
+  .cervices__item-link {
     width: 250px;
   }
   .rent .container {
