@@ -343,7 +343,7 @@ html {
 /*==================================== HEADER ====================================*/
 /*==================================== HEADER ====================================*/
 .header {
-  background: url("../img/1.header/header-bg.jpg") center/cover no-repeat;
+  background: url("../img/1.header/header-bg.jpg") center/cover no-repeat, #000;
   font-family: montserrat;
   /*------------------------------ dropdown ------------------------------*/
   /*----------------------------------------------------------------------*/
@@ -372,6 +372,15 @@ html {
   transition: all 0.3s;
   padding-bottom: 30px;
   font-size: 18px;
+  position: fixed;
+  width: 100%;
+}
+.header__top-wrapper {
+  -webkit-transform: translate(0, -100px);
+      -ms-transform: translate(0, -100px);
+          transform: translate(0, -100px);
+  -webkit-transition: all 0.5s 4s;
+  transition: all 0.5s 4s;
 }
 .header__top--hidden {
   -webkit-transform: translateY(-90px);
@@ -770,7 +779,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 40px 0 80px;
+  padding: 140px 0 80px;
 }
 .header__body-inner {
   display: -webkit-box;
@@ -796,6 +805,11 @@ html {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 30px;
+  -webkit-transform: translate(-100px, 0);
+      -ms-transform: translate(-100px, 0);
+          transform: translate(-100px, 0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .header__body-text {
   font-family: "Montserrat";
@@ -805,14 +819,29 @@ html {
   line-height: 150%;
   color: #FFFFFF;
   margin-bottom: 91px;
+  -webkit-transform: translate(-100px, 0);
+      -ms-transform: translate(-100px, 0);
+          transform: translate(-100px, 0);
+  -webkit-transition: all 0.5s 0.5s;
+  transition: all 0.5s 0.5s;
 }
 .header__body-text--alter {
   display: none;
+  -webkit-transform: translate(-100px, 0);
+      -ms-transform: translate(-100px, 0);
+          transform: translate(-100px, 0);
+  -webkit-transition: all 0.5s 0.5s;
+  transition: all 0.5s 0.5s;
 }
 .header__slider-outer {
   display: block;
   position: relative;
   margin-bottom: 80px;
+  -webkit-transform: translate(-100px, 0);
+      -ms-transform: translate(-100px, 0);
+          transform: translate(-100px, 0);
+  -webkit-transition: all 0.5s 1.5s;
+  transition: all 0.5s 1.5s;
 }
 .header__slide-inner {
   padding: 0 18px;
@@ -863,6 +892,31 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.header__socials-item {
+  -webkit-transform: translate(0, 0) scale(0);
+      -ms-transform: translate(0, 0) scale(0);
+          transform: translate(0, 0) scale(0);
+}
+.header__socials-item:nth-child(1) {
+  -webkit-transition: all 0.5s 2s;
+  transition: all 0.5s 2s;
+}
+.header__socials-item:nth-child(2) {
+  -webkit-transition: all 0.5s 2.25s;
+  transition: all 0.5s 2.25s;
+}
+.header__socials-item:nth-child(3) {
+  -webkit-transition: all 0.5s 2.5s;
+  transition: all 0.5s 2.5s;
+}
+.header__socials-item:nth-child(4) {
+  -webkit-transition: all 0.5s 2.75s;
+  transition: all 0.5s 2.75s;
+}
+.header__socials-item:nth-child(5) {
+  -webkit-transition: all 0.5s 3s;
+  transition: all 0.5s 3s;
+}
 .header__socials-link svg path {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -875,9 +929,13 @@ html {
   background: #fff;
   border-radius: 20px;
   padding: 59px 40px 57px;
-  -webkit-transform: translateY(-50px);
-      -ms-transform: translateY(-50px);
-          transform: translateY(-50px);
+  -ms-flex-item-align: start;
+      align-self: start;
+  -webkit-transform: translate(100px, 0);
+      -ms-transform: translate(100px, 0);
+          transform: translate(100px, 0);
+  -webkit-transition: all 0.5s 3.5s;
+  transition: all 0.5s 3.5s;
 }
 .header__form-data {
   margin-bottom: 26px;
@@ -2995,4 +3053,23 @@ html {
   .rent__form-tooltip {
     right: -33px;
   }
+}
+/*==================================== ANIMATION ====================================*/
+.loading,
+.anim-item {
+  opacity: 0;
+}
+
+.loaded,
+.anim-item--active {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform: translate(0, 0) scale(1);
+      -ms-transform: translate(0, 0) scale(1);
+          transform: translate(0, 0) scale(1);
 }

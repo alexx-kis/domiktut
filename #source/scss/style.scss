@@ -213,12 +213,8 @@ html {
 /*==================================== HEADER ====================================*/
 /*==================================== HEADER ====================================*/
 
-
-
-
-
 .header {
-	background: url('../img/1.header/header-bg.jpg') center / cover no-repeat;
+	background: url('../img/1.header/header-bg.jpg') center / cover no-repeat, #000;
 	font-family: montserrat;
 
 	&__inner {
@@ -241,6 +237,13 @@ html {
 		transition: all .3s;
 		padding-bottom: 30px;
 		font-size: 18px;
+		position: fixed;
+		width: 100%;
+	}
+
+	&__top-wrapper {
+		transform: translate(0, -100px);
+		transition: all .5s 4s;
 	}
 
 	&__top--hidden {
@@ -661,7 +664,7 @@ html {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 40px 0 80px;
+		padding: 140px 0 80px;
 	}
 
 	&__body-inner {
@@ -686,6 +689,8 @@ html {
 		letter-spacing: 0.02em;
 		color: #fff;
 		margin-bottom: 30px;
+		transform: translate(-100px, 0);
+		transition: all .5s;
 	}
 
 	&__body-text {
@@ -696,16 +701,22 @@ html {
 		line-height: 150%;
 		color: #FFFFFF;
 		margin-bottom: 91px;
+		transform: translate(-100px, 0);
+		transition: all .5s .5s;
 	}
 
 	&__body-text--alter {
 		display: none;
+		transform: translate(-100px, 0);
+		transition: all .5s .5s;
 	}
 
 	&__slider-outer {
 		display: block;
 		position: relative;
 		margin-bottom: 80px;
+		transform: translate(-100px, 0);
+		transition: all .5s 1.5s;
 	}
 
 	&__slide-inner {
@@ -761,6 +772,30 @@ html {
 		justify-content: space-between;
 	}
 
+	&__socials-item {
+		transform: translate(0, 0) scale(0);
+
+		&:nth-child(1) {
+			transition: all .5s 2s;
+		}
+
+		&:nth-child(2) {
+			transition: all .5s 2.25s;
+		}
+
+		&:nth-child(3) {
+			transition: all .5s 2.5s;
+		}
+
+		&:nth-child(4) {
+			transition: all .5s 2.75s;
+		}
+
+		&:nth-child(5) {
+			transition: all .5s 3s;
+		}
+	}
+
 	&__socials-link svg path {
 		transition: all .3s;
 	}
@@ -778,7 +813,9 @@ html {
 		background: #fff;
 		border-radius: 20px;
 		padding: 59px 40px 57px;
-		transform: translateY(-50px);
+		align-self: start;
+		transform: translate(100px, 0);
+		transition: all .5s 3.5s;
 	}
 
 	&__form-data {
@@ -1659,3 +1696,18 @@ html {
 
 
 @import "media";
+
+/*==================================== ANIMATION ====================================*/
+
+.loading,
+.anim-item {
+	opacity: 0;
+}
+
+.loaded,
+.anim-item--active {
+	opacity: 1;
+	transform: translate(0, 0);
+	transform: scale(1);
+	transform: translate(0, 0) scale(1);
+}

@@ -316,3 +316,14 @@ overlay.addEventListener('click', function () {
 $('.footer__catalog-title').on('click', function () {
 	$(this).next().slideToggle()
 })
+
+
+/*==================================== ANIMATION ====================================*/
+
+window.onload = function () {
+	let loadings = document.querySelectorAll('.loading');
+
+	for (let loading of loadings) {
+		loading.classList.add('loaded');
+	}
+};

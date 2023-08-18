@@ -17,136 +17,132 @@
 	<div class="wrapper">
 
 		<div class="overlay"></div>
-		<header class="header">
+		<header class="header loading">
 
 			<div class="header__inner">
 				<!-- HEADER TOP -->
 				<div class="header__top">
-					<div class="container">
-						<div class="header__top-inner">
-
-							<div class="header__top-left">
-								<div class="header__logo">
-									<a href="#" class="header__logo-link">
-										<img src="./img/1.header/header__logo.png" alt="">
-									</a>
-								</div>
-								<div class="header__city">
-									<a href="#" class="header__city-link">
-										<div class="header__city-icon">
-											<img src="./img/1.header/city-icon.svg" alt="">
-										</div>
-										<div class="header__city-title">Казань</div>
-										<div class="header__city-arrow">
-											<img src="./img/1.header/arrow-down-icon.svg" alt="">
-										</div>
-									</a>
-									<div class="header__dropdown">
-										<div class="header__dropdown-menu">
-											<div class="header__dropdown-item">
-												<a href="#" class="header__dropdown-link">Москва</a>
+					<div class="header__top-wrapper loading">
+						<div class="container">
+							<div class="header__top-inner">
+								<div class="header__top-left">
+									<div class="header__logo">
+										<a href="#" class="header__logo-link">
+											<img src="./img/1.header/header__logo.png" alt="">
+										</a>
+									</div>
+									<div class="header__city">
+										<a href="#" class="header__city-link">
+											<div class="header__city-icon">
+												<img src="./img/1.header/city-icon.svg" alt="">
 											</div>
-											<div class="header__dropdown-item">
-												<a href="#" class="header__dropdown-link">Санкт-Петербург</a>
+											<div class="header__city-title">Казань</div>
+											<div class="header__city-arrow">
+												<img src="./img/1.header/arrow-down-icon.svg" alt="">
 											</div>
-											<div class="header__dropdown-item">
-												<a href="#" class="header__dropdown-link">Новосибирск</a>
+										</a>
+										<div class="header__dropdown">
+											<div class="header__dropdown-menu">
+												<div class="header__dropdown-item">
+													<a href="#" class="header__dropdown-link">Москва</a>
+												</div>
+												<div class="header__dropdown-item">
+													<a href="#" class="header__dropdown-link">Санкт-Петербург</a>
+												</div>
+												<div class="header__dropdown-item">
+													<a href="#" class="header__dropdown-link">Новосибирск</a>
+												</div>
 											</div>
 										</div>
 									</div>
+									<div class="header__button-box">
+										<a href="#" class="header__button button" id="catalog">Каталог</a>
+										<a href="#" class="header__button button header__compilations">Быстрые
+											подборки</a>
+									</div>
 								</div>
-								<div class="header__button-box">
-									<a href="#" class="header__button button" id="catalog">Каталог</a>
-									<a href="#" class="header__button button header__compilations">Быстрые
-										подборки</a>
+								<div class="header__top-center">
+									<ul class="header__links">
+										<li class="header__links-item">
+											<a href="#faq" class="header__links-link">Частые вопросы</a>
+										</li>
+										<li class="header__links-item">
+											<a href="#" class="header__links-link">Сотрудничество</a>
+										</li>
+									</ul>
 								</div>
-							</div>
-
-							<div class="header__top-center">
-								<ul class="header__links">
-									<li class="header__links-item">
-										<a href="#faq" class="header__links-link">Частые вопросы</a>
-									</li>
-									<li class="header__links-item">
-										<a href="#" class="header__links-link">Сотрудничество</a>
-									</li>
-								</ul>
-							</div>
-
-							<div class="header__top-right">
-								<div class="header__favourites">
-									<a href="#" class="header__favourites-link">
-										<svg width="22" height="21" viewBox="0 0 22 21" fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M11.0004 1.90639C13.5452 -0.378355 17.4777 -0.302522 19.9293 2.15339C22.3798 4.61039 22.4643 8.52339 20.1849 11.0757L10.9983 20.2754L1.81377 11.0757C-0.465561 8.52339 -0.379978 4.60389 2.06944 2.15339C4.52319 -0.299272 8.44811 -0.381605 11.0004 1.90639ZM18.3953 3.68414C16.7703 2.05698 14.1486 1.9909 12.4478 3.51839L11.0015 4.81623L9.55419 3.51948C7.84794 1.98981 5.23169 2.05698 3.60236 3.68631C1.98819 5.30048 1.90694 7.88423 3.39436 9.59156L10.9994 17.2085L18.6044 9.59264C20.0929 7.88423 20.0116 5.30373 18.3953 3.68414Z"
-												fill="white" />
-										</svg>
-									</a>
-								</div>
-								<div class="header__search">
-									<a href="#" class="header__search-link">
-										<div class="header__search-icon">
-											<svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+								<div class="header__top-right">
+									<div class="header__favourites">
+										<a href="#" class="header__favourites-link">
+											<svg width="22" height="21" viewBox="0 0 22 21" fill="none"
 												xmlns="http://www.w3.org/2000/svg">
 												<path
-													d="M16.033 14.617L20.316 18.899L18.901 20.314L14.619 16.031C13.0257 17.3082 11.044 18.0029 9.00195 18C4.03395 18 0.00195312 13.968 0.00195312 9C0.00195312 4.032 4.03395 0 9.00195 0C13.97 0 18.002 4.032 18.002 9C18.0049 11.042 17.3102 13.0237 16.033 14.617ZM14.027 13.875C15.2961 12.5699 16.0048 10.8204 16.002 9C16.002 5.132 12.869 2 9.00195 2C5.13395 2 2.00195 5.132 2.00195 9C2.00195 12.867 5.13395 16 9.00195 16C10.8224 16.0029 12.5718 15.2941 13.877 14.025L14.027 13.875Z"
+													d="M11.0004 1.90639C13.5452 -0.378355 17.4777 -0.302522 19.9293 2.15339C22.3798 4.61039 22.4643 8.52339 20.1849 11.0757L10.9983 20.2754L1.81377 11.0757C-0.465561 8.52339 -0.379978 4.60389 2.06944 2.15339C4.52319 -0.299272 8.44811 -0.381605 11.0004 1.90639ZM18.3953 3.68414C16.7703 2.05698 14.1486 1.9909 12.4478 3.51839L11.0015 4.81623L9.55419 3.51948C7.84794 1.98981 5.23169 2.05698 3.60236 3.68631C1.98819 5.30048 1.90694 7.88423 3.39436 9.59156L10.9994 17.2085L18.6044 9.59264C20.0929 7.88423 20.0116 5.30373 18.3953 3.68414Z"
 													fill="white" />
-											</svg>
-										</div>
-										<div class="header__search-text">Поиск по названию</div>
-									</a>
-									<div class="header__search-pop-up">
-										<div class="header__search-input">
-											<input id="search" type="text" placeholder="Введите название дома">
-										</div>
-										<a href="#"
-											class="header__search-button header__search-button--large button">Найти</a>
-										<a href="#" class="header__search-button header__search-button--small button">
-											<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M14.0271 12.8475L17.5963 16.4158L16.4171 17.595L12.8488 14.0258C11.5211 15.0901 9.86964 15.669 8.16797 15.6666C4.02797 15.6666 0.667969 12.3066 0.667969 8.16663C0.667969 4.02663 4.02797 0.666626 8.16797 0.666626C12.308 0.666626 15.668 4.02663 15.668 8.16663C15.6704 9.86829 15.0915 11.5197 14.0271 12.8475ZM12.3555 12.2291C13.4131 11.1415 14.0037 9.68365 14.0013 8.16663C14.0013 4.94329 11.3905 2.33329 8.16797 2.33329C4.94464 2.33329 2.33464 4.94329 2.33464 8.16663C2.33464 11.3891 4.94464 14 8.16797 14C9.68499 14.0023 11.1429 13.4117 12.2305 12.3541L12.3555 12.2291Z"
-													fill="#333" />
 											</svg>
 										</a>
 									</div>
-								</div>
-								<div class="header__phone">
-									<a href="#" class="header__phone-link">
-										<div class="header__phone-icon">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+									<div class="header__search">
+										<a href="#" class="header__search-link">
+											<div class="header__search-icon">
+												<svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.033 14.617L20.316 18.899L18.901 20.314L14.619 16.031C13.0257 17.3082 11.044 18.0029 9.00195 18C4.03395 18 0.00195312 13.968 0.00195312 9C0.00195312 4.032 4.03395 0 9.00195 0C13.97 0 18.002 4.032 18.002 9C18.0049 11.042 17.3102 13.0237 16.033 14.617ZM14.027 13.875C15.2961 12.5699 16.0048 10.8204 16.002 9C16.002 5.132 12.869 2 9.00195 2C5.13395 2 2.00195 5.132 2.00195 9C2.00195 12.867 5.13395 16 9.00195 16C10.8224 16.0029 12.5718 15.2941 13.877 14.025L14.027 13.875Z"
+														fill="white" />
+												</svg>
+											</div>
+											<div class="header__search-text">Поиск по названию</div>
+										</a>
+										<div class="header__search-pop-up">
+											<div class="header__search-input">
+												<input id="search" type="text" placeholder="Введите название дома">
+											</div>
+											<a href="#"
+												class="header__search-button header__search-button--large button">Найти</a>
+											<a href="#" class="header__search-button header__search-button--small button">
+												<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M14.0271 12.8475L17.5963 16.4158L16.4171 17.595L12.8488 14.0258C11.5211 15.0901 9.86964 15.669 8.16797 15.6666C4.02797 15.6666 0.667969 12.3066 0.667969 8.16663C0.667969 4.02663 4.02797 0.666626 8.16797 0.666626C12.308 0.666626 15.668 4.02663 15.668 8.16663C15.6704 9.86829 15.0915 11.5197 14.0271 12.8475ZM12.3555 12.2291C13.4131 11.1415 14.0037 9.68365 14.0013 8.16663C14.0013 4.94329 11.3905 2.33329 8.16797 2.33329C4.94464 2.33329 2.33464 4.94329 2.33464 8.16663C2.33464 11.3891 4.94464 14 8.16797 14C9.68499 14.0023 11.1429 13.4117 12.2305 12.3541L12.3555 12.2291Z"
+														fill="#333" />
+												</svg>
+											</a>
+										</div>
+									</div>
+									<div class="header__phone">
+										<a href="#" class="header__phone-link">
+											<div class="header__phone-icon">
+												<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M15.5004 11.6833C15.5002 11.6833 15.5 11.6835 15.5 11.6838V14.63C15.5001 14.841 15.4202 15.0441 15.2763 15.1985C15.1325 15.3528 14.9355 15.4469 14.725 15.4617C14.3608 15.4867 14.0633 15.5 13.8333 15.5C6.46917 15.5 0.5 9.53083 0.5 2.16667C0.5 1.93667 0.5125 1.63917 0.538333 1.275C0.553102 1.06454 0.647151 0.867509 0.801503 0.723674C0.955855 0.579839 1.15902 0.499905 1.37 0.5H4.31667C4.42003 0.499896 4.51975 0.538216 4.59644 0.607517C4.67313 0.676818 4.72133 0.772152 4.73167 0.875C4.75083 1.06667 4.76833 1.21917 4.785 1.335C4.95061 2.49077 5.29 3.61486 5.79167 4.66917C5.87083 4.83583 5.81917 5.035 5.66917 5.14167L5.18105 5.49045C4.41614 6.03702 4.11879 7.05445 4.61299 7.8542C5.50046 9.29038 6.71079 10.5007 8.147 11.3881C8.94661 11.8821 9.96382 11.585 10.5105 10.8204L10.8575 10.335C10.91 10.2617 10.9865 10.2091 11.0737 10.1864C11.161 10.1637 11.2535 10.1723 11.335 10.2108C12.3892 10.7116 13.513 11.0501 14.6683 11.215C14.7842 11.2317 14.9367 11.25 15.1267 11.2683C15.2294 11.2789 15.3245 11.3271 15.3936 11.4038C15.4627 11.4804 15.5009 11.5798 15.5008 11.6829C15.5008 11.6831 15.5006 11.6833 15.5004 11.6833Z"
+														fill="white" />
+												</svg>
+											</div>
+											<div class="header__phone-text">8 (843) 528-65-48</div>
+										</a>
+									</div>
+									<div class="header__burger">
+										<div class="header__burger-link">
+											<svg width="23" height="20" viewBox="0 0 23 20" fill="none"
 												xmlns="http://www.w3.org/2000/svg">
 												<path
-													d="M15.5004 11.6833C15.5002 11.6833 15.5 11.6835 15.5 11.6838V14.63C15.5001 14.841 15.4202 15.0441 15.2763 15.1985C15.1325 15.3528 14.9355 15.4469 14.725 15.4617C14.3608 15.4867 14.0633 15.5 13.8333 15.5C6.46917 15.5 0.5 9.53083 0.5 2.16667C0.5 1.93667 0.5125 1.63917 0.538333 1.275C0.553102 1.06454 0.647151 0.867509 0.801503 0.723674C0.955855 0.579839 1.15902 0.499905 1.37 0.5H4.31667C4.42003 0.499896 4.51975 0.538216 4.59644 0.607517C4.67313 0.676818 4.72133 0.772152 4.73167 0.875C4.75083 1.06667 4.76833 1.21917 4.785 1.335C4.95061 2.49077 5.29 3.61486 5.79167 4.66917C5.87083 4.83583 5.81917 5.035 5.66917 5.14167L5.18105 5.49045C4.41614 6.03702 4.11879 7.05445 4.61299 7.8542C5.50046 9.29038 6.71079 10.5007 8.147 11.3881C8.94661 11.8821 9.96382 11.585 10.5105 10.8204L10.8575 10.335C10.91 10.2617 10.9865 10.2091 11.0737 10.1864C11.161 10.1637 11.2535 10.1723 11.335 10.2108C12.3892 10.7116 13.513 11.0501 14.6683 11.215C14.7842 11.2317 14.9367 11.25 15.1267 11.2683C15.2294 11.2789 15.3245 11.3271 15.3936 11.4038C15.4627 11.4804 15.5009 11.5798 15.5008 11.6829C15.5008 11.6831 15.5006 11.6833 15.5004 11.6833Z"
+													d="M0.625 1.25C0.625 0.559644 1.16599 0 1.83333 0H21.1667C21.834 0 22.375 0.559644 22.375 1.25C22.375 1.94036 21.834 2.5 21.1667 2.5H1.83333C1.16599 2.5 0.625 1.94036 0.625 1.25ZM0.625 10C0.625 9.30964 1.16599 8.75 1.83333 8.75H21.1667C21.834 8.75 22.375 9.30964 22.375 10C22.375 10.6904 21.834 11.25 21.1667 11.25H1.83333C1.16599 11.25 0.625 10.6904 0.625 10ZM0.625 18.75C0.625 18.0596 1.16599 17.5 1.83333 17.5H21.1667C21.834 17.5 22.375 18.0596 22.375 18.75C22.375 19.4404 21.834 20 21.1667 20H1.83333C1.16599 20 0.625 19.4404 0.625 18.75Z"
 													fill="white" />
 											</svg>
 										</div>
-										<div class="header__phone-text">8 (843) 528-65-48</div>
-									</a>
-								</div>
-								<div class="header__burger">
-									<div class="header__burger-link">
-										<svg width="23" height="20" viewBox="0 0 23 20" fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M0.625 1.25C0.625 0.559644 1.16599 0 1.83333 0H21.1667C21.834 0 22.375 0.559644 22.375 1.25C22.375 1.94036 21.834 2.5 21.1667 2.5H1.83333C1.16599 2.5 0.625 1.94036 0.625 1.25ZM0.625 10C0.625 9.30964 1.16599 8.75 1.83333 8.75H21.1667C21.834 8.75 22.375 9.30964 22.375 10C22.375 10.6904 21.834 11.25 21.1667 11.25H1.83333C1.16599 11.25 0.625 10.6904 0.625 10ZM0.625 18.75C0.625 18.0596 1.16599 17.5 1.83333 17.5H21.1667C21.834 17.5 22.375 18.0596 22.375 18.75C22.375 19.4404 21.834 20 21.1667 20H1.83333C1.16599 20 0.625 19.4404 0.625 18.75Z"
-												fill="white" />
-										</svg>
 									</div>
 								</div>
-
+								<div class="header__hide-button">
+									<a href="#" class="header__hide-link header__hide-link--large">Показать / скрыть
+										шапку</a>
+									<a href="#" class="header__hide-link header__hide-link--small">Показать шапку</a>
+								</div>
+								<div class="header__compilation-button">
+									<a href="#compilations" class="header__compilation-link">Показать подборку</a>
+								</div>
 							</div>
-
-							<div class="header__hide-button">
-								<a href="#" class="header__hide-link header__hide-link--large">Показать / скрыть
-									шапку</a>
-								<a href="#" class="header__hide-link header__hide-link--small">Показать шапку</a>
-							</div>
-							<div class="header__compilation-button">
-								<a href="#compilations" class="header__compilation-link">Показать подборку</a>
-							</div>
-
 						</div>
 					</div>
 				</div>
@@ -269,11 +265,11 @@
 					<div class="container header__body-inner">
 						<!-- <div class="header__body-inner"> -->
 						<div class="header__body-info">
-							<h1 class="header__body-heading">Аренда коттеджей и домов в Казани</h1>
-							<p class="header__body-text">Найдите идеальный вариант сами или предоставьте это нам
+							<h1 class="header__body-heading loading">Аренда коттеджей и домов в Казани</h1>
+							<p class="header__body-text loading">Найдите идеальный вариант сами или предоставьте это нам
 							</p>
-							<p class="header__body-text--alter">Давайте вам что-нибудь подберём</p>
-							<div class="header__slider-outer">
+							<p class="header__body-text--alter loading">Давайте вам что-нибудь подберём</p>
+							<div class="header__slider-outer loading">
 								<div class="header__body-slider header__slider">
 									<div class="header__slide-inner">
 										<a href="#" class="header__slide">
@@ -340,7 +336,7 @@
 								<a href="#" class="header__application-button button">Заявка на подбор</a>
 							</div>
 							<ul class="header__body-socials header__socials">
-								<li class="header__socials-item">
+								<li class="header__socials-item loading">
 									<a href="#" class="header__socials-link">
 										<svg width="29" height="20" viewBox="0 0 29 20" fill="none"
 											xmlns="http://www.w3.org/2000/svg">
@@ -350,7 +346,7 @@
 										</svg>
 									</a>
 								</li>
-								<li class="header__socials-item">
+								<li class="header__socials-item loading">
 									<a href="#" class="header__socials-link">
 										<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
 											xmlns="http://www.w3.org/2000/svg">
@@ -360,7 +356,7 @@
 										</svg>
 									</a>
 								</li>
-								<li class="header__socials-item">
+								<li class="header__socials-item loading">
 									<a href="#" class="header__socials-link">
 										<svg width="22" height="14" viewBox="0 0 22 14" fill="none"
 											xmlns="http://www.w3.org/2000/svg">
@@ -370,7 +366,7 @@
 										</svg>
 									</a>
 								</li>
-								<li class="header__socials-item">
+								<li class="header__socials-item loading">
 									<a href="#" class="header__socials-link">
 										<svg width="24" height="23" viewBox="0 0 24 23" fill="none"
 											xmlns="http://www.w3.org/2000/svg">
@@ -380,7 +376,7 @@
 										</svg>
 									</a>
 								</li>
-								<li class="header__socials-item">
+								<li class="header__socials-item loading">
 									<a href="#" class="header__socials-link">
 										<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
 											xmlns="http://www.w3.org/2000/svg">
@@ -392,7 +388,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="header__body-form header__form">
+						<div class="header__body-form header__form loading">
 							<div class="header__form-data">
 								<div class="header__form-dates">
 									<div class="header__form-labels">
