@@ -18,6 +18,8 @@ html {
 	font-size: 40px;
 	line-height: 150%;
 	color: #333333;
+	transform: translate(-100px, 0);
+	transition: all .5s;
 }
 
 .button {
@@ -214,7 +216,7 @@ html {
 /*==================================== HEADER ====================================*/
 
 .header {
-	background: url('../img/1.header/header-bg.jpg') center / cover no-repeat, #000;
+
 	font-family: montserrat;
 
 	&__inner {
@@ -239,6 +241,7 @@ html {
 		font-size: 18px;
 		position: fixed;
 		width: 100%;
+		z-index: 100;
 	}
 
 	&__top-wrapper {
@@ -660,11 +663,14 @@ html {
 	// 	/*==================================== HEADER BODY ====================================*/
 
 	&__body {
+		background: url('../img/1.header/header-bg.jpg') center / cover no-repeat, #000;
 		flex: 1 1 auto;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		padding: 140px 0 80px;
+		transition: all .1s;
+		z-index: 0;
 	}
 
 	&__body-inner {
@@ -716,7 +722,7 @@ html {
 		position: relative;
 		margin-bottom: 80px;
 		transform: translate(-100px, 0);
-		transition: all .5s 1.5s;
+		transition: all .5s 1s;
 	}
 
 	&__slide-inner {
@@ -988,7 +994,7 @@ html {
 		margin-bottom: 76px;
 	}
 
-	&__items-inner {
+	&__items-list {
 		display: flex;
 		justify-content: space-between;
 	}
@@ -997,6 +1003,23 @@ html {
 		margin-right: 80px;
 		max-width: 331px;
 		min-width: 240px;
+		transform: translate(0, 0) scale(0);
+
+		&:nth-child(1) {
+			transition: all .5s;
+		}
+
+		&:nth-child(2) {
+			transition: all .5s .25s;
+		}
+
+		&:nth-child(3) {
+			transition: all .5s .5s
+		}
+
+		&:nth-child(4) {
+			transition: all .5s .75s
+		}
 	}
 
 	&__items-item:last-child {

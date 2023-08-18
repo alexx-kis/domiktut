@@ -107,6 +107,11 @@ html {
   font-size: 40px;
   line-height: 150%;
   color: #333333;
+  -webkit-transform: translate(-100px, 0);
+      -ms-transform: translate(-100px, 0);
+          transform: translate(-100px, 0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .button {
@@ -343,7 +348,6 @@ html {
 /*==================================== HEADER ====================================*/
 /*==================================== HEADER ====================================*/
 .header {
-  background: url("../img/1.header/header-bg.jpg") center/cover no-repeat, #000;
   font-family: montserrat;
   /*------------------------------ dropdown ------------------------------*/
   /*----------------------------------------------------------------------*/
@@ -374,6 +378,7 @@ html {
   font-size: 18px;
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 .header__top-wrapper {
   -webkit-transform: translate(0, -100px);
@@ -767,6 +772,7 @@ html {
   display: none;
 }
 .header__body {
+  background: url("../img/1.header/header-bg.jpg") center/cover no-repeat, #000;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -780,6 +786,9 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 140px 0 80px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  z-index: 0;
 }
 .header__body-inner {
   display: -webkit-box;
@@ -840,8 +849,8 @@ html {
   -webkit-transform: translate(-100px, 0);
       -ms-transform: translate(-100px, 0);
           transform: translate(-100px, 0);
-  -webkit-transition: all 0.5s 1.5s;
-  transition: all 0.5s 1.5s;
+  -webkit-transition: all 0.5s 1s;
+  transition: all 0.5s 1s;
 }
 .header__slide-inner {
   padding: 0 18px;
@@ -1142,7 +1151,7 @@ html {
 .about__heading {
   margin-bottom: 76px;
 }
-.about__items-inner {
+.about__items-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1154,6 +1163,25 @@ html {
   margin-right: 80px;
   max-width: 331px;
   min-width: 240px;
+  -webkit-transform: translate(0, 0) scale(0);
+      -ms-transform: translate(0, 0) scale(0);
+          transform: translate(0, 0) scale(0);
+}
+.about__items-item:nth-child(1) {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.about__items-item:nth-child(2) {
+  -webkit-transition: all 0.5s 0.25s;
+  transition: all 0.5s 0.25s;
+}
+.about__items-item:nth-child(3) {
+  -webkit-transition: all 0.5s 0.5s;
+  transition: all 0.5s 0.5s;
+}
+.about__items-item:nth-child(4) {
+  -webkit-transition: all 0.5s 0.75s;
+  transition: all 0.5s 0.75s;
 }
 .about__items-item:last-child {
   margin-right: 0px;
